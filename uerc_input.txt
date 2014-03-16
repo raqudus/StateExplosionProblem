@@ -1,0 +1,8 @@
+UeRc:0 #[Idle]
+UeRc:2 #[Conversational CS Speech (12.2/12.2)]
+UeRc:4 #[Interactive PS (RACH/FACH)]
+UeRc:5 #[Interactive PS (64/64)]
+UeRc:10 #[Conversational CS Speech (12.2/12.2) + Interactive PS (64/64)]
+UeRc:25 #[Interactive PS (EUL/HS)]
+UeRc:26 #[Interactive PS (64/64) + Interactive PS (64/64)]
+UeRc:62#[Interactive PS (EUL/HS) + Interactive PS (EUL/HS)]

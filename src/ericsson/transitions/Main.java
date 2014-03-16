@@ -15,7 +15,7 @@ public class Main {
 
 	public static void main (String[] arg) throws FileNotFoundException, Exception {
 
-		// Opens the inputfile and saves the data in variables ==================================
+		// Opens the input file and saves the data in variables ==================================
 
 		if(arg.length < 2)
 		{
@@ -45,7 +45,10 @@ public class Main {
 		// Creates an output file ===============================================================
 
 		File fileOutput = new File(arg[1]); 
-
+		// if the file does not exist, create a new file.
+		if(!fileOutput.exists()){
+			fileOutput.createNewFile();
+		}
 		if(fileOutput.canWrite()) {
 			PrintWriter outputfile = new PrintWriter(new File(arg[1]));
 
@@ -58,7 +61,7 @@ public class Main {
 		}
 
 		// Opens the output file ================================================================
-
+		// This just for demo not needed in the final version of the script.
 		Desktop file = Desktop.getDesktop();
 		file.open(new File(arg[1]));
 	}
